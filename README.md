@@ -1,2 +1,2 @@
-# asterisk_pattern
-CAT ii question 2
+# cat2
+cat2
