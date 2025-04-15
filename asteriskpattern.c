@@ -1,19 +1,15 @@
-#include <stdio.h>
-
-int main() {
-    int i, j, k;
-        // Outer loop for rows
-    for (i = 6; i >= 1; i--) {
-        for (k=1; k<=i; k++){
-            printf(" ");
-        }
-        // Inner loop for columns (asterisks)
-        for (j = 1; j <= i; j++) {
+# include <stdio.h>
+char space = ' ';
+int main(){
+    for (int i=1;i<=6;i++){// loop for 5 rows
+        for(int j=6 ;j>=i;j--){// loop for printing asterisks
             printf("*");
         }
-        
-        printf("\n"); // Move to the next row
+        printf("\n");
+        for (int k=1;k<=i;k++){// loop for adding the spacing
+            printf("%c",space);
+        }
+    
     }
-
-    return 0; // Indicate successful execution
+    return 0;
 }
